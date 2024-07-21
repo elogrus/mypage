@@ -1,3 +1,4 @@
+// if (window.screen.width <= 780) {
 let prevScrollpos = window.scrollY;
 window.onscroll = function () {
     let currentScrollPos = window.scrollY;
@@ -8,19 +9,20 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 };
+// }
 
 function copyOnClick(event) {
     const target = event.target;
-    console.log(target);
-    // Copy the text inside the text field
-    navigator.clipboard.writeText(target.textContent);
+    try {
+        navigator.clipboard.writeText(target.textContent);
 
-    const lastContent = target.textContent;
-    target.textContent = "Скопировано!";
+        const lastContent = target.textContent;
+        target.textContent = "Скопировано!";
 
-    setTimeout(() => {
-        target.textContent = lastContent;
-    }, 1500);
+        setTimeout(() => {
+            target.textContent = lastContent;
+        }, 1500);
+    } catch (error) {}
 }
 
 const copyElems = document.querySelectorAll(".copyOnClick");
@@ -32,11 +34,11 @@ copyElems.forEach((elem) => {
 const scrollToElems = document.querySelectorAll(".scrollTo");
 
 function scrollTo(event) {
-    console.log("Hello");
-    const target = event.target;
+    const target = event.currentTarget;
     const query = target.getAttribute("scrollTo");
     const scrollToElem = document.querySelector(query);
-    console.log(scrollToElem);
+    // console.log(query);
+    // console.log(scrollToElem);
     scrollToElem.scrollIntoView(
         {
             behavior: "smooth",

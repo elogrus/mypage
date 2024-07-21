@@ -1,5 +1,5 @@
 .contacts {
-    padding: 300px 0 300px 0;
+    padding: 300px 10px 300px 10px;
     font-family: Helvetica;
     display: flex;
     flex-direction: column;
@@ -54,4 +54,30 @@
     padding: 0 8px 0 8px;
     cursor: pointer;
     color: #de4f24;
+}
+
+@media (max-width: 780px) {
+    .contacts__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 520px) {
+    .contacts__title {
+        font-size: 35px;
+    }
+    .contacts__email {
+        /* to avoid blue highlight on mobile */
+        cursor: default; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contacts__title {
+        font-size: 28px;
+    }
+
+    .contacts__item {
+        font-size: 20px;
+    }
 }

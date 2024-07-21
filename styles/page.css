@@ -13,6 +13,15 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
 }
 
 .wrapper {

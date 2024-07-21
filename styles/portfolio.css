@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0 50px 0;
+    padding: 100px 10px 50px 10px;
     font-family: Helvetica;
     font-weight: normal;
 }
@@ -26,7 +26,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px 30px;
-    
+
     margin-top: 60px;
 }
 
@@ -40,10 +40,16 @@
     overflow: hidden;
 }
 
+.portfolio__item:active {
+    opacity: .8;
+}
+
 .portfolio__img {
     height: 250px;
     width: inherit;
     aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
 }
 
 .portfolio__item-text {
@@ -64,4 +70,18 @@
     font-weight: normal;
     font-size: 14px;
     color: #575757;
+}
+
+@media (max-width: 520px) {
+    .portfolio__title {
+        font-size: 38px;
+    }
+
+    .portfolio__list {
+        padding: 0 5px;
+    }
+
+    .portfolio__item {
+        width: 100%
+    }
 }

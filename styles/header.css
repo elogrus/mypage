@@ -1,4 +1,6 @@
 .header {
+    left: 50%;
+    transform: translate(-50%, 0);
     position: fixed;
     display: flex;
     justify-content: center;
@@ -19,10 +21,11 @@
 }
 
 .header__left {
+    transition: opacity .2s;
     font-weight: bold;
     font-size: 30px;
     color: #fff;
-    cursor: default;
+    cursor: pointer;
 }
 
 .header__nav {
@@ -40,15 +43,8 @@
     transition: opacity .2s;
 }
 
-.header__nav-item:hover {
-    opacity: .8;
-}
-
-.header__nav-item:active {
-    opacity: .6;
-}
-
 .header__right {
+    display: block;
     height: 100%;
     font-weight: bold;
     font-size: 30px;
@@ -56,15 +52,25 @@
     transition: opacity .2s;
 }
 
-.header__right:hover {
-    opacity: .8;
-}
-
-.header__right:active {
-    opacity: .6;
-}
-
 .header__right img {
     width: 36px;
     aspect-ratio: 1;
+}
+
+.header__right:hover,
+.header__left:hover,
+.header__nav-item:hover {
+    opacity: .8;
+}
+
+.header__right:active,
+.header__left:active,
+.header__nav-item:active {
+    opacity: .6;
+}
+
+@media (max-width: 780px) {
+    .header {
+        display: none;
+    }
 }
