@@ -1,0 +1,57 @@
+.contacts {
+    padding: 300px 0 300px 0;
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__title {
+    font-size: 50px;
+    width: fit-content;
+    background: rgb(44, 162, 180);
+    background: linear-gradient(90deg, rgba(44, 162, 180, 1) 0%, rgba(85, 152, 222, 1) 24%, rgba(127, 135, 255, 1) 45%, rgba(246, 90, 173, 1) 76%, rgba(236, 61, 67, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contacts__list {
+    padding: 50px 0 0 0px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: #000;
+
+}
+
+.contacts__icon-telegram {
+    height: 2rem;
+    margin-right: 10px;
+}
+
+.contacts__icon-gmail {
+    height: 1.4rem;
+    margin-right: 15px;
+}
+
+.contacts__telegram {
+    padding: 0 8px 0 8px;
+    cursor: pointer;
+    color: #24A1DE;
+}
+
+.contacts__email {
+    padding: 0 8px 0 8px;
+    cursor: pointer;
+    color: #de4f24;
+}

@@ -1,0 +1,26 @@
+.footer {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 50px;
+    color: #6E6E73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    max-width: 980px;
+    width: 100%;
+    font-family: Helvetica;
+    font-size: 12px;
+}
+
+.right {
+
+}
+.left {
+}

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(../assets/fonts/helvetica_normal.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(../assets/fonts/helvetica_bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: AkiraExpanded;
+    src: url(../assets/fonts/akiraexpanded-superbold.ttf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: SFProDisplay;
+    src: url(../assets/fonts/SF-Pro-Display-normal.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SFProText;
+    src: url(../assets/fonts/SFProText-normal.ttf);
+    font-weight: normal;
+}
